@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Incident Report Form</title>
+
+ <link rel="stylesheet" href="styles.css">
+ 
+
+</head>
+<body>
+        
+<div class="container">
+        <h1>Incident Report Form</h1>
+
+        <table>
+            <tr>
+
+                <form action="index.html" method="POST">
+                <td>
+                    <input type="submit" name="button" id="button" value="ICT Portal">
+                </td></form>
+
+                <form action="tech_frm.html" method="POST">
+                <td>
+                    <input type="submit" name="button" id="button" value="Technician Registry Form">
+                </td></form>
+
+
+            </tr>
+        </table>
+
+    <form action="" method="post" name="incid_rep">
+        <table>
+       
+        <tr>
+            <td> <label for="name">Date of Visit:</label><br><br>
+        <input type="text" id="datepicker" name="datepicker" placeholder="11 Mar 24" required>
+</td>
+            
+            <td><label for="name">Technician's Name:</label><br><br>       
+<select id="name" name="name" required>
+                <option value="tech name">Select Technician's Name</option>
+                <option value="Solomon R">Solomon R</option>
+                <option value="Neale S">Neale S</option>
+                <option value="A Joseph">A Joseph</option>
+                <option value="E Superville">E Superville</option>
+                <option value="Narace">Narace</option>
+                <option value="Solomon S">Solomon S</option>
+                <option value="Prudhomme E">Prudhomme E</option>
+                <option value="Stanley R">Stanley R</option>
+                <option value="Ryan">Ryan</option>
+                <option value="Bryce">Bryce</option>
+                <option value="Lau">Lau</option>
+                <option value="Stevenson">Stevenson</option>
+                <option value="Rique">Rique</option>
+                <option value="Adams">Adams</option>
+                <option value="Clement S">Clement S</option>
+                <option value="Graham A">Graham A</option>
+                <option value="Crawford">Crawford</option>
+                <option value="Williams">Williams</option>
+                <option value="Fletcher">Fletcher</option>
+                <option value="Pelage">Pelage</option>
+    </select></td>
+        </tr>
+<tr>
+            <td> <label for="camp_location">Camp Location:</label><br><br>       
+<select id="camp_location" name="camp_location" required>
+                <option value="Select Camp">Select Camp</option>
+                <option value="Ogden 1st Bn">Ogden 1st Bn</option>
+                <option value="La Romaine 2nd Bn">La Romaine 2nd Bn</option>
+                <option value="SSB Teteron">SSB Teteron</option>
+                <option value="Cumuto 1st Engr">Cumuto 1st Engr</option>
+                <option value="Signal Hill">Signal Hill</option>
+                <option value="Omega Battle Camp">Omega Battle Camp</option>
+                <option value="Regimental Headquarters">Regimental Headquarters</option>
+    </select></td>
+            
+            <td><label for="dept">Department:</label><br><br>
+        <input type="text" id="dept" name="dept" placeholder="HQ Admin"required><br><br></td>
+        </tr>
+        
+    </table>
+
+<label for="solution">Incident Report</label><br><br>
+        <textarea id="incident" name="incident" rows="20" cols="80" required placeholder="State what took place"></textarea><br><br>
+
+
+    <input type="submit" value="Submit" name="submit">
+    </form>
+</div>
+<script src="G Sheets.js"></script>
+</body>
+
+</html>

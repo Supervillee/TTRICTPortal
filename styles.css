@@ -1,0 +1,124 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+    /*color: blue;*/
+    font-family: Times New Roman;
+    text-align: center;
+}
+label {
+    font-size: 17px;
+}
+
+textarea {
+    font-size: 14px;
+	border-radius: 5px;
+	background-color: #f0f0f0;
+	margin-bottom: 10px;
+}
+
+
+table {
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-bottom: 20px; 
+        }
+
+        th, td {
+            padding: 8px; 
+            border-bottom: 0px solid #ddd; 
+        }
+
+        th {
+            text-align: left; 
+        }
+        
+        
+             .container {
+            max-width: 1000px; /* Set maximum width for the container */
+            margin: 0 auto; /* Center the container horizontally */
+            padding: 20px; /* Add padding to the container */
+            border: 1px solid #ccc; /* Add border to the container */
+            border-radius: 5px; /* Add border-radius to make the container rounded */
+            background-color: #f9f9f9; /* Set background color for the container */
+            width: 75%;
+            height: 50%;
+            align-items: center;   
+        }
+
+
+            .centered-div {
+            width: 75%;
+            height: 75%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+         
+        select {
+            padding: 10px; /* Add padding to the select element */
+            font-size: 14px; /* Set the font size */
+            border: 1px solid #ccc; /* Add border */
+            border-radius: 5px; /* Add border-radius to make it rounded */
+            background-color: #fff; /* Set background color */
+            color: #333; /* Set text color */
+            width: 100%; /* Set width */
+		}
+
+
+		select::after {
+            content: '\25BC'; 
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+
+        
+        select option {
+            padding: 10px; 
+            background-color: #fff; 
+            color: #333; 
+        }
+
+        
+        select option:hover {
+            background-color: #f9f9f9; /* Set hover background color */
+        }
+
+
+        input[type="text"],
+        textarea {
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            box-sizing: border-box; 
+            font-size: 12px;
+        }
+
+
+        input[type="submit"] {
+            width: 100%; 
+            padding: 10px; 
+            border: none; 
+            border-radius: 5px; 
+            background-color: #4CAF50; 
+            color: white; 
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 10px; 
+
+        }
+        
+        .custom-input {
+            background-color: #f0f0f0; 
+            color: #333; 
+        }

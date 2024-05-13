@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Technician Registry Form</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="css/style.css"> 
+                                    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        
+
+</head>
+<body>
+        
+<div class="container">
+    
+        <h1>Technician Repair Registry Form</h1><br>
+
+        <table>
+            <tr>
+                <form action="index.html" method="POST">
+                <td>
+                    <input type="submit" name="button" id="button" value="ICT Portal">
+                </td></form>
+
+                <form action="incid_frm.html" method="POST">
+                <td>
+                    <input type="submit" name="button" id="button" value="Incident Record Form">
+                </td></form>
+            </tr>
+        </table>
+
+    <form action="" method="post" name="tech_registry">
+        <table>
+       
+        <tr>
+            <td> <label for="name">Date of Visit:</label><br><br>
+        <input type="text" id="datepicker" name="datepicker" placeholder="11 Mar 24" required>
+</td>
+            
+        <td> 
+            <label for="name">Technician's Name:</label><br><br>       
+<select id="name" name="name" required>
+                <option value="tech name">Select Technician's Name</option>
+                <option value="Solomon R">Solomon RJ</option>
+                <option value="Neale S">Neale S</option>
+                <option value="A Joseph">A Joseph</option>
+                <option value="E Superville">E Superville</option>
+                <option value="Narace">Narace</option>
+                <option value="Solomon S">Solomon S</option>
+                <option value="Prudhomme E">Prudhomme E</option>
+                <option value="Stanley R">Stanley R</option>
+                <option value="Ryan">Ryan</option>
+                <option value="Bryce">Bryce</option>
+                <option value="Lau">Lau</option>
+                <option value="Stevenson">Stevenson K</option>
+                <option value="Rique">Rique</option>
+                <option value="Adams">Adams</option>
+                <option value="Clement S">Clement S</option>
+                <option value="Graham A">Graham A</option>
+                <option value="Crawford">Crawford</option>
+                <option value="Williams">Williams</option>
+                <option value="Fletcher">Fletcher</option>
+                <option value="Pelage">Pelage</option>
+    </select>
+        </td>
+        </tr>
+<tr>
+            <td> <label for="camp_location">Camp Location:</label><br><br>       
+<select id="camp_location" name="camp_location" required>
+                <option value="Select Camp" placeholder="Select Camp"> </option>
+                <option value="Ogden 1st Bn">Ogden 1st Bn</option>
+                <option value="La Romaine 2nd Bn">La Romaine 2nd Bn</option>
+                <option value="SSB Teteron">SSB Teteron</option>
+                <option value="Cumuto 1st Engr">Cumuto 1st Engr</option>
+                <option value="Signal Hill">Signal Hill</option>
+                <option value="Omega Battle Camp">Omega Battle Camp</option>
+                <option value="Regimental Headquarters">Regimental Headquarters</option>
+    </select></td>
+            
+            <td><label for="dept">Department:</label><br><br>
+        <input type="text" id="dept" name="dept" placeholder="HQ Admin"required><br><br></td>
+        </tr>
+<tr>
+<td><label for="device">Problematic Device:</label><br><br>
+        <input type="text" id="device" name="device" placeholder="Dell Server" required><br><br></td>
+
+<td><label for="model">Service Tag:</label><br><br>
+        <input type="text" id="model" name="model" placeholder="R720" required><br><br></td></tr>
+
+<tr><td><label for="issue">Please select the issue(s) from the list below</label>        
+<div class="container-btn">
+    <div class="select-btn">
+                <span class="btn-text">Issues</span>
+                <span class="arrow-dwn">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </div>
+
+            <ul class="list-items">
+                <li class="item" id="issue">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text" name="not coming on" value="not coming on">Not Coming ON</span>
+                </li>
+                <li class="item" value="issue" id="issue">
+                    <span class="checkbox" id="issue">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">No Power Light</span>
+                </li>
+                <li class="item" value="issue" id="issue">
+                    <span class="checkbox" id="issue">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">Not Booting Up</span>
+                </li>
+                <li class="item">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">Not Charging</span>
+                </li>
+                <li class="item">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">No Wifi Signal</span>
+                </li>
+                <li class="item">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">No Network Connection</span>
+                </li>
+                <li class="item">
+                    <span class="checkbox">
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </span>
+                    <span class="item-text">Issue Not Listed</span>
+                </li>
+            </ul>
+        
+        </div><br><br></td>
+
+
+
+<div class="status">
+    <tr><td><label for="status">Status:</label><br> <br>       
+<select id="status" name="status" required><br>
+                <option value="Select Status">Select Status</option>
+                <option value="Resolved">Resolved</option>
+                <option value="Unresolved">Unresolved</option>
+    </select><br><br></td>
+
+<td><label for="unlisted_issue">Issue If Not Listed Above:</label><br><br>
+        <input type="text" id="unlisted_issue" name="unlisted_issue"><br><br>
+        
+        <label for="issue">Issue: Please hold the CTRL/CMD on MAC for multiple options</label><br><br>        
+<div class="container-btn">
+<div class="select-btn"> 
+<span class="btn-text">Issues</span>
+                <span class="arrow-dwn">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>  
+</div> <ul>
+<select id="issue" name="issue[]" multiple><br>
+                <option value="Select an Issue"></option>
+                <option value="Not Coming On">Not Coming On</option>
+                <option value="No Power light">No Power light</option>
+                <option value="Not Booting Up">Not Booting Up</option>
+                <option value="Not Charging">Not Charging</option>
+                <option value="No Wifi Signal">No Wifi Signal</option>
+                <option value="No Network Connection">No Network Connection</option>
+                <option value="Issue Not Listed">Issue Not Listed</option>
+    </select></ul></div> <br><br>
+        </td>
+
+
+</tr></div>
+
+        
+    </table>
+
+<label for="solution">Solution Applied</label><br><br>
+        <textarea id="solution" name="solution" rows="20" cols="80" required></textarea><br><br>
+
+
+    <input type="submit" value="Submit" name="submit">
+    </form>
+</div>
+<script src="Google Sheet.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
