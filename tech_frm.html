@@ -13,7 +13,19 @@
                                     
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
         
-
+<style>
+    a {
+            width: 100px;
+            height: 100%;
+            background-color: #4CAF50; 
+            color: white; 
+            font-size: 16px; 
+            padding: 10px; 
+            border: none; 
+            border-radius: 5px;
+            text-decoration: none;
+            } 
+</style>
 </head>
 <body>
         
@@ -23,15 +35,16 @@
 
         <table>
             <tr>
-                <form action="index.html" method="POST">
                 <td>
-                    <input type="submit" name="button" id="button" value="ICT Portal">
-                </td></form>
+                    <a href="index.html">ICT Portal</a>
 
-                <form action="incid_frm.html" method="POST">
+                </td>
+
                 <td>
-                    <input type="submit" name="button" id="button" value="Incident Record Form">
-                </td></form>
+                   <td>
+                    <a href="incid_frm.html">Incident Record Form</a>
+
+                </td>
             </tr>
         </table>
 
@@ -93,62 +106,22 @@
 <td><label for="model">Service Tag:</label><br><br>
         <input type="text" id="model" name="model" placeholder="R720" required><br><br></td></tr>
 
-<tr><td><label for="issue">Please select the issue(s) from the list below</label>        
-<div class="container-btn">
-    <div class="select-btn">
-                <span class="btn-text">Issues</span>
-                <span class="arrow-dwn">
-                    <i class="fa-solid fa-chevron-down"></i>
-                </span>
-            </div>
+<tr><td> 
+    <label for="issue">Issue, Select from the list below:</label><br><br>        
+               
+<select id="issue" name="issue" required><br><div>
+                <option value="Select an Issue"></option>
+                <option value="Not Coming On">Not Coming On</option>
+                <option value="No Power light">No Power light</option>
+                <option value="Not Booting Up">Not Booting Up</option>
+                <option value="Not Charging">Not Charging</option>
+                <option value="No Wifi Signal">No Wifi Signal</option>
+                <option value="No Network Connection">No Network Connection</option>
+                <option value="Issue Not Listed">Issue Not Listed</option>
+    </select></div> <br><br></td>
 
-            <ul class="list-items">
-                <li class="item" id="issue">
-                    <span class="checkbox">
-                        <i class="fa-solid fa-check check-icon"></i>
-                    </span>
-                    <span class="item-text" name="not coming on" value="not coming on">Not Coming ON</span>
-                </li>
-                <li class="item" value="issue" id="issue">
-                    <span class="checkbox" id="issue">
-                        <i class="fa-solid fa-check check-icon"></i>
-                    </span>
-                    <span class="item-text">No Power Light</span>
-                </li>
-                <li class="item" value="issue" id="issue">
-                    <span class="checkbox" id="issue">
-                        <i class="fa-solid fa-check check-icon"></i>
-                    </span>
-                    <span class="item-text">Not Booting Up</span>
-                </li>
-                <li class="item">
-                    <span class="checkbox">
-                        <i class="fa-solid fa-check check-icon"></i>
-                    </span>
-                    <span class="item-text">Not Charging</span>
-                </li>
-                <li class="item">
-                    <span class="checkbox">
-                        <i class="fa-solid fa-check check-icon"></i>
-                    </span>
-                    <span class="item-text">No Wifi Signal</span>
-                </li>
-                <li class="item">
-                    <span class="checkbox">
-                        <i class="fa-solid fa-check check-icon"></i>
-                    </span>
-                    <span class="item-text">No Network Connection</span>
-                </li>
-                <li class="item">
-                    <span class="checkbox">
-                        <i class="fa-solid fa-check check-icon"></i>
-                    </span>
-                    <span class="item-text">Issue Not Listed</span>
-                </li>
-            </ul>
-        
-        </div><br><br></td>
-
+<br><br><td><label for="unlisted_issue">Issue If Not Listed Previously:</label><br><br>
+        <textarea id="unlisted_issue" name="unlisted_issue" rows="5" cols="20"></textarea><br><br></td></tr>
 
 
 <div class="status">
@@ -158,29 +131,6 @@
                 <option value="Resolved">Resolved</option>
                 <option value="Unresolved">Unresolved</option>
     </select><br><br></td>
-
-<td><label for="unlisted_issue">Issue If Not Listed Above:</label><br><br>
-        <input type="text" id="unlisted_issue" name="unlisted_issue"><br><br>
-        
-        <label for="issue">Issue: Please hold the CTRL/CMD on MAC for multiple options</label><br><br>        
-<div class="container-btn">
-<div class="select-btn"> 
-<span class="btn-text">Issues</span>
-                <span class="arrow-dwn">
-                    <i class="fa-solid fa-chevron-down"></i>
-                </span>  
-</div> <ul>
-<select id="issue" name="issue[]" multiple><br>
-                <option value="Select an Issue"></option>
-                <option value="Not Coming On">Not Coming On</option>
-                <option value="No Power light">No Power light</option>
-                <option value="Not Booting Up">Not Booting Up</option>
-                <option value="Not Charging">Not Charging</option>
-                <option value="No Wifi Signal">No Wifi Signal</option>
-                <option value="No Network Connection">No Network Connection</option>
-                <option value="Issue Not Listed">Issue Not Listed</option>
-    </select></ul></div> <br><br>
-        </td>
 
 
 </tr></div>
